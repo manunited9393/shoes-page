@@ -1,0 +1,101 @@
+.catalog {
+    padding: 25px 0 30px 0;
+    background-color: #ebe7df;
+    &__row {
+        margin-bottom: 38px;
+    }
+    &__category-name {
+        font-size: 25px;
+        font-weight: 300;
+        display: inline-block;
+    }
+    .btn {
+        display: inline-block;
+        float: right;
+    }
+    &__items {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        clear: both;
+    }
+    &__box {
+        background-color: #fff;
+        position: relative;
+        width: 300px;
+    }
+    img {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    &__divide {
+        opacity: 0.4;
+    }
+    &__name-brend {
+        margin: 12px auto 20px 92px;
+        font-size: 18px;
+        // display: none;
+        cursor: pointer;
+    }
+    .price {
+        position: absolute;
+        bottom: 0;
+        left: 13px;
+        &_black, &_orange {
+            top: 0;
+            left: 218px;
+        }
+    }
+    // change block
+    &__options {
+        display: flex;
+        justify-content: space-between;
+        margin: 12px 50px 20px 120px;
+        font-size: 15px;
+        display: none;
+    }
+    // adition
+    &__adition {
+        margin-top: 25px;
+        display: flex;
+        
+    }
+    &__adition-box {
+        padding: 30px 23px;
+        background-color: rgba(0,0,0, .1);
+        margin-right: 10px;
+        &:last-child {
+            flex: 2 0 auto;
+            margin-right: 0;
+        }
+    }
+    &__adition-title {
+        margin-bottom: 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 12px;
+    }
+    &__adition-text {
+        position: relative;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        &:before {
+            content: 'APR 01';
+            padding-top: 3px;
+            font-size: 13px;
+            font-weight: 900;
+            display: block;
+            text-align: center;
+            position: absolute;
+            left: -50px;
+            top: -2px;
+            width: 36px;
+            height: 36px;
+            color: #fff;
+            background-color: $green-color;
+        }
+    }
+}

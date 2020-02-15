@@ -1,0 +1,36 @@
+.specials {
+    padding: 25px 0;
+    background-color: #242424;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        position: relative;
+        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:before {
+            content: "on sale";
+            // display: block; 
+            padding: 18px 25px;
+            color: #fff;
+            font-size: 25px;
+            font-weight: 300;
+            background-color: rgba(0,0,0, .7);
+            position: absolute;
+            top: 50%;
+            transform: translate(0,-50%);
+            text-transform: uppercase;
+        }
+    }
+    &__item-2:before {
+        content: "speacial offer";
+    }
+    &__item-3:before {
+        content: "must have";
+    }
+}
